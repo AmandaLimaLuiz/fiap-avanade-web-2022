@@ -45,20 +45,19 @@
         window.addEventListener('scroll',(e)=>{
             console.log(body.clientHeight)
 
-            if(window.scrollY > 100){
-                button.classList.remove("disable");
-                header.style.background= '#fff';
+            if(window.scrollY < 100){
+                button.classList.add("disable");
+                header.style.background= 'none';
 
-                if(scrollY >= 1000){
+                
+            }else if(scrollY >= 1000){
                     header.style.background= 'rgba( 36,36,36,0.35)';
                     header.classList.add("disable");
-                }
-            }else{
-                if(scrollY < 1000){
-                    header.classList.remove("disable");
-                }
-                button.classList.add("disable");
-                header.style.background='none';
+            }else{           
+                
+                header.classList.remove("disable");
+                button.classList.remove("disable");
+                header.style.background='#fff';
             }
         });
 
