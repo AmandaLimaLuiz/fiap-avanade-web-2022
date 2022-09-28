@@ -1,5 +1,5 @@
-header{
-    
+header.top-site{
+    transition-duration: 0.5s ;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -34,19 +34,19 @@ section.full-banner{
     background-size: cover;
     > .destak{
     width: 40%;
-    height: 60vh;
+    height: 80vh;
     position: absolute;
     bottom: 0;
-    left: 15%;
+    left: 5%;
     > h1{
         font-weight: 300;
-        font-size: 4rem;
-        margin: 0;
+        font-size: 3.5rem;
+        margin-top: 0.1em;
         line-height: 1em;
     }
     > h2, h3{
         font-weight: 300;
-        margin: 0;
+        margin-bottom: 1em;
     } h3{
         width: 100%;
         background: rgba( 36,36,36,0.35);
@@ -64,12 +64,12 @@ section.full-banner{
     background: #ffe45c;
     color: #242424;
 }
-.botton-disable{
+button.disable{
     background: none;
     border: solid 0.5px rgba( 36,36,36,0.8);
 }
-.botton-disable:hover{
-    background: rgba( 36,36,36,0.8);
+button.disable:hover{
+    background: rgba( 36,36,36,0.2);
 }
 button{
     background: linear-gradient(150deg,#ffe45c 0%, #ffc900 100%);
