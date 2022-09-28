@@ -1,6 +1,6 @@
 .full-banner-form{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@
 
 .container-login{
     width: 420px;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     form{
         background: rgba(36,36,36,0.35) ;
@@ -39,6 +39,7 @@
                 font-weight: bold;
                 color: #222;
                 font-family: 'Open Sans';
+                
             }
             a:hover{
                 color: #fff;
