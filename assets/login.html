@@ -45,23 +45,38 @@
     <script>
         const header = document.querySelector(".top-site");
         const button = document.querySelector(".top-button");
+        const body = document.querySelector("body")
+        const svg = document.querySelector("svg");
         button.classList.add("disable");
         header.style.background='none';
+        svg.style.fill="hsla(0,0%,14%,1);"
 
         //Janela(window) e site(document)
         // evento chamado scroll, JavaScript é uma linguagem dirigida a eventos.
         //Criamos uma escuta para o evento.
         //forma mais simples de criar uma função, é a => arrow function
         window.addEventListener('scroll',(e)=>{
-            if(window.scrollY > 100){
-                button.classList.remove("disable");
-                header.style.background= '#fff';
-            }else{
+            console.log(body.clientHeight)
+
+            if(window.scrollY < 100){
                 button.classList.add("disable");
-                header.style.background='none';
+                header.style.background= 'none';
+                svg.style.fill="hsla(0,0%,14%,1)"
+
+                
+            }else if(scrollY >= (body.clientHeight - 1000)){
+                    header.style.background= 'rgba( 36,36,36,0.85)';
+                    header.classList.add("disable");
+                    svg.style.fill="#fff"
+                    
+            }
+            else{           
+                
+                header.classList.remove("disable");
+                button.classList.remove("disable");
+                header.style.background='#fff';
             }
         });
-
     </script>
    
 </body>
