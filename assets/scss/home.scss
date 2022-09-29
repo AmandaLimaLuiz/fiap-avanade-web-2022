@@ -18,17 +18,17 @@ header.top-site{
             li{
                 list-style: none;
                 margin-right: 20px;
-                                
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #222;
+                    font-family: 'Open Sans';
+                }               
             }
         }
     }
 }
-header nav ul li a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #222;
-    font-family: 'Open Sans';
-}
+
 header.disable{
     & > nav {
         > ul{          
@@ -127,4 +127,3 @@ button:hover{
     width: auto;
     height: 24px;
 }
-
