@@ -1,6 +1,6 @@
- const tooltip = document.querySelector("#tooltip");
- const body = document.querySelector("body")
- const header = document.querySelector(".top-site")
+const tooltip = document.querySelector("#tooltip");
+const body = document.querySelector("body")
+const header = document.querySelector(".top-site")
 
 body.addEventListener('mouseover',(e)=>{
     body.style.background = "gray"
@@ -39,5 +39,6 @@ tooltip.addEventListener("mouseout", (e)=>{
         document.querySelector(".tooltip").remove();
     }
 });
+
 
 //criar função para tooltip em varios icones. tooltip("#local","texto do icone"); responsivo
