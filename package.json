@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map",
-    "git": "git add --all && git commit -m\"Deploy\" && git push origin master && echo \"Deployed\" && npm run dev"
+    "git": "git add --all && git commit -m\"Deploy\" && git push origin master && echo \"Deployed\" && npm run dev",
+    "site": "git add --all && git commit -m\"DeploySite\" && git push site master && echo \"DeployedSite\" && npm run dev"
   },
   "repository": {
     "type": "git",
