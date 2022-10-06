@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AmandaLimaLuiz/fiap-avanade-web-2022/issues"
   },
-  "homepage": "https://github.com/AmandaLimaLuiz/fiap-avanade-web-2022#readme"
+  "homepage": "https://github.com/AmandaLimaLuiz/fiap-avanade-web-2022#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
 }
